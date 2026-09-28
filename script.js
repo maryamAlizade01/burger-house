@@ -21,8 +21,9 @@ orderButtons.forEach(function(button) {
         } , 0);
         carT.textContent = totalPrice;
 
+        carT.textContent = "";
         cart.forEach(function(orderBurger) {
-
+            carT.textContent += orderBurger.name + "\n" ;
         })
     })
 })
