@@ -651,6 +651,11 @@ section h2 {
     width: 20px;
     opacity: 70%;
 }
+/*==== مخفی کردن منوهمبرگری و ایتم های نوبار موبایل ====*/
+.menu-btn,
+.mobile-menu {
+    display: none;
+}
 /*==== responsive ==== */
 @media (max-width: 768px) {
 
@@ -662,231 +667,277 @@ section h2 {
     }
 
     .logo img {
-        height: 40px;
+        height: 30px;
         padding-top: 0;
-        padding-left: 10px;
+        padding-left: 15px;
+        margin-bottom: 0;
+        margin-top: 5px;
     }
 
     .logo p {
         padding-top: 0;
         padding-left: 4px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .logo span {
-        padding-top: 18px;
-        font-size: 15px;
+        padding-top: 15px;
+        padding-left: 2px;
+        font-size: 14px;
     }
 
-    .navbar {
-        gap: 12px;
-        padding-top: 0;
-        font-size: 11px;
-    }
-
+    .navbar,
     .button {
-        width: 85px;
-        height: 32px;
-        margin-right: 10px;
-        margin-top: 0;
-        padding-top: 5px;
-        padding-left: 10px;
-        font-size: 11px;
-        align-items: center;
-        justify-content: center;
+       display: none;
     }
 
+    .menu-btn {
+       display: block;
+    }
+    /* mobile menu */
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 200px;
+    background-color: #0f0f1a;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 100;
+}
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.mobile-menu button {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffbf00;
+}
 
     /* ================= HERO ================= */
 
-    .section {
-        height: auto;
-        min-height: 700px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 
-    .div {
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
+.div {
+    display: contents;
+}
 
-    .section p {
-        font-size: 20px;
-        letter-spacing: 2px;
-        padding-left: 0;
-        margin-top: 45px;
-        text-align: center;
-    }
+/* متن اول */
+section p {
+    order: 1;
+    padding-left: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
 
-    .section h1 {
-        text-align: center;
-    }
+/* عنوان */
+section h1 {
+    order: 2;
+    text-align: center;
+}
 
-    .span1 {
-        font-size: 65px;
-        letter-spacing: 2px;
-        padding-left: 0;
-    }
+.span1 {
+    padding-left: 0;
+    font-size: 60px;
+}
 
-    section span {
-        font-size: 65px;
-        letter-spacing: 2px;
-        padding-left: 0;
-    }
+section span {
+    padding-left: 0;
+    font-size: 60px;
+}
 
-    section h2 {
-        font-size: 17px;
-        padding-left: 0;
-        margin-top: 25px;
-        text-align: center;
-    }
+/* توضیحات */
+section h2 {
+    order: 3;
+    padding-left: 0;
+    font-size: 13px;
+    margin-top: 25px;
+    text-align: center;
+}
 
-    .div-btn {
-        margin-left: 0;
-        margin-top: 25px;
-        text-align: center;
-    }
+/* عکس */
+.img {
+    order: 4;
+    position: relative;
+    margin-top: 20px;
+}
 
-    .btn,
-    .btn2 {
-        width: 140px;
-        height: 45px;
-        font-size: 16px;
-    }
+.break-light {
+    top: 405px;
+}
+.berger-img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
 
-    .berger-img {
-        width: 300px;
-        margin-left: 0;
-        margin-top: 40px;
-    }
+/* دکمه ها */
+.div-btn {
+    order: 5;
+    margin: 25px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
-    .light {
-        left: 50%;
-        width: 300px;
-        height: 500px;
-    }
-
-    .break-light {
-        top: auto;
-        bottom: 0;
-    }
+.btn,
+.btn2 {
+    width: 100px;
+    height: 30px;
+    margin: 0;
+    font-size: 15px;
+}
 
 
     /* ================= SECTION 2 ================= */
 
-    .section2 {
-        height: auto;
-    }
+.section2 {
+    width: 100%;
+    height: auto;
+}
 
-    .sec2 {
-        height: auto;
-        padding: 35px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 35px;
-    }
+.sec2 {
+    width: 100%;
+    height: auto;
+    padding: 30px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+    box-sizing: border-box;
+}
 
-    .car,
-    .hamberger,
-    .star {
-        width: auto;
-        margin-left: 0;
-        padding-top: 0;
-        display: flex;
-        justify-content: center;
-    }
+.car,
+.hamberger,
+.star {
+    width: 33.33%;
+    margin: 5px 0 0 40px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    .car-p,
-    .hamberger-p,
-    .star-p {
-        font-size: 25px;
-        padding-left: 20px;
-        padding-top: 0;
-    }
+.car-p,
+.hamberger-p,
+.star-p {
+    font-size: 15px;
+    padding: 0;
+    margin: 0 0 3px 13px;
+}
 
-    .car-h,
-    .hamberger-h,
-    .star-h {
-        font-size: 14px;
-        padding-left: 20px;
-        line-height: 1.5;
-        margin-bottom: 0;
-    }
+.car-h,
+.hamberger-h,
+.star-h {
+    font-size: 10px;
+    padding: 0;
+    margin: 0 0 0 13px;
+    line-height: 1.4;
+    text-align: center;
+}
 
 
     /* ================= SECTION 3 - BURGERS ================= */
 
-    .section3 {
-        height: auto;
-        padding-bottom: 50px;
-    }
+.section3 {
+    height: auto;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
 
-    .sec3-p {
-        margin-left: 0;
-        padding-top: 35px;
-        padding-left: 0;
-        text-align: center;
-        font-size: 27px;
-    }
+.sec3-p {
+    margin-left: 0;
+    padding-top: 35px;
+    padding-left: 0;
+    text-align: center;
+    font-size: 20px;
+}
 
-    .picture {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
+.picture {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
 
-    .pic {
-        width: 280px;
-        height: 400px;
-        margin-top: 10px;
-    }
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px;
+    box-sizing: border-box;
 
-    .pic1,
-    .pic2,
-    .pic3 {
-        display: block;
-        margin: 55px auto 0;
-        padding-left: 0;
-    }
+    scroll-behavior: smooth;
+}
 
-    .pic1 {
-        width: 140px;
-    }
+.picture::-webkit-scrollbar {
+    display: none;
+}
 
-    .pic2 {
-        width: 145px;
-    }
+.pic {
+    width: 280px;
+    height: 400px;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
 
-    .pic3 {
-        width: 120px;
-    }
+.pic1,
+.pic2,
+.pic3 {
+    display: block;
+    margin: 55px auto 0;
+    padding-left: 0;
+}
 
-    .pic1-h,
-    .pic2-h,
-    .pic3-h {
-        text-align: center;
-        padding-left: 0;
-        font-size: 25px;
-    }
+.pic1 {
+    width: 140px;
+}
 
-    .pic1-h2,
-    .pic2-h2,
-    .pic3-h2 {
-        text-align: center;
-        padding-left: 0;
-        font-size: 25px;
-    }
+.pic2 {
+    width: 145px;
+}
 
-    .btn-1,
-    .btn-2,
-    .btn-3 {
-        display: block;
-        margin: 10px auto 0;
-    }
+.pic3 {
+    width: 120px;
+}
+
+.pic1-h,
+.pic2-h,
+.pic3-h,
+.pic1-h2,
+.pic2-h2,
+.pic3-h2 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 25px;
+}
+
+.btn-1,
+.btn-2,
+.btn-3 {
+    display: block;
+    margin: 10px auto 0;
+}
 
 
     /* ================= SECTION 4 - ABOUT ================= */
@@ -943,57 +994,72 @@ section h2 {
     /* ================= SECTION 5 - REVIEWS ================= */
 
     .section5 {
-        height: auto;
-        padding-bottom: 50px;
-    }
+    height: auto;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
 
-    .p-section {
-        font-size: 28px;
-        padding-left: 0;
-        padding-top: 35px;
-        text-align: center;
-    }
+.p-section {
+    font-size: 28px;
+    padding-left: 0;
+    padding-top: 45px;
+    text-align: center;
+}
 
-    .h-section {
-        font-size: 17px;
-        padding-left: 0;
-        padding-top: 10px;
-        text-align: center;
-    }
+.h-section {
+    font-size: 15px;
+    padding-left: 0;
+    padding-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
 
-    .div-section {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+.div-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
 
-    .div-s {
-        width: 280px;
-        height: 190px;
-    }
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px;
+    box-sizing: border-box;
 
-    .stars {
-        margin-top: 35px;
-        padding-left: 0;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    scroll-behavior: smooth;
+}
 
-    .p-div1,
-    .p-div2,
-    .p-div3 {
-        padding-left: 0;
-        text-align: center;
-        font-size: 21px;
-    }
+.div-section::-webkit-scrollbar {
+    display: none;
+}
 
-    .h-div1,
-    .h-div2,
-    .h-div3 {
-        padding-left: 0;
-        text-align: center;
-    }
+.div-s {
+    width: 250px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.stars {
+    margin-top: 35px;
+    padding-left: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-div1,
+.p-div2,
+.p-div3 {
+    padding-left: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.h-div1,
+.h-div2,
+.h-div3 {
+    padding-left: 0;
+    text-align: center;
+}
 
 
     /* ================= FOOTER ================= */
