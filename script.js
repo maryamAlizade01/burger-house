@@ -19,11 +19,14 @@ orderButtons.forEach(function(button) {
         const totalPrice = cart.reduce((total , item) => {
             return (total + item.price);
         } , 0);
-        carT.textContent = totalPrice;
 
         carT.textContent = "";
         cart.forEach(function(orderBurger) {
-            carT.textContent += orderBurger.name + "\n" ;
+            carT.textContent += orderBurger.name + " -$" + orderBurger.price + "\n";
         })
+        carT.textContent += "Total:" + totalPrice;
     })
 })
+const deleteButton = document.createElement("button");
+deleteButton.textContent = "Delete";
+carT.appendChild(deleteButton);
