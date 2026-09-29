@@ -651,3 +651,360 @@ section h2 {
     width: 20px;
     opacity: 70%;
 }
+/*==== responsive ==== */
+@media (max-width: 768px) {
+
+    /* ================= HEADER ================= */
+
+    header {
+        height: 65px;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 40px;
+        padding-top: 0;
+        padding-left: 10px;
+    }
+
+    .logo p {
+        padding-top: 0;
+        padding-left: 4px;
+        font-size: 15px;
+    }
+
+    .logo span {
+        padding-top: 18px;
+        font-size: 15px;
+    }
+
+    .navbar {
+        gap: 12px;
+        padding-top: 0;
+        font-size: 11px;
+    }
+
+    .button {
+        width: 85px;
+        height: 32px;
+        margin-right: 10px;
+        margin-top: 0;
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 11px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .section {
+        height: auto;
+        min-height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .section p {
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding-left: 0;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    .section h1 {
+        text-align: center;
+    }
+
+    .span1 {
+        font-size: 65px;
+        letter-spacing: 2px;
+        padding-left: 0;
+    }
+
+    section span {
+        font-size: 65px;
+        letter-spacing: 2px;
+        padding-left: 0;
+    }
+
+    section h2 {
+        font-size: 17px;
+        padding-left: 0;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .div-btn {
+        margin-left: 0;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .btn,
+    .btn2 {
+        width: 140px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .berger-img {
+        width: 300px;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .light {
+        left: 50%;
+        width: 300px;
+        height: 500px;
+    }
+
+    .break-light {
+        top: auto;
+        bottom: 0;
+    }
+
+
+    /* ================= SECTION 2 ================= */
+
+    .section2 {
+        height: auto;
+    }
+
+    .sec2 {
+        height: auto;
+        padding: 35px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .car,
+    .hamberger,
+    .star {
+        width: auto;
+        margin-left: 0;
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .car-p,
+    .hamberger-p,
+    .star-p {
+        font-size: 25px;
+        padding-left: 20px;
+        padding-top: 0;
+    }
+
+    .car-h,
+    .hamberger-h,
+    .star-h {
+        font-size: 14px;
+        padding-left: 20px;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+
+
+    /* ================= SECTION 3 - BURGERS ================= */
+
+    .section3 {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .sec3-p {
+        margin-left: 0;
+        padding-top: 35px;
+        padding-left: 0;
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .picture {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .pic {
+        width: 280px;
+        height: 400px;
+        margin-top: 10px;
+    }
+
+    .pic1,
+    .pic2,
+    .pic3 {
+        display: block;
+        margin: 55px auto 0;
+        padding-left: 0;
+    }
+
+    .pic1 {
+        width: 140px;
+    }
+
+    .pic2 {
+        width: 145px;
+    }
+
+    .pic3 {
+        width: 120px;
+    }
+
+    .pic1-h,
+    .pic2-h,
+    .pic3-h {
+        text-align: center;
+        padding-left: 0;
+        font-size: 25px;
+    }
+
+    .pic1-h2,
+    .pic2-h2,
+    .pic3-h2 {
+        text-align: center;
+        padding-left: 0;
+        font-size: 25px;
+    }
+
+    .btn-1,
+    .btn-2,
+    .btn-3 {
+        display: block;
+        margin: 10px auto 0;
+    }
+
+
+    /* ================= SECTION 4 - ABOUT ================= */
+
+    .section4 {
+        height: auto;
+    }
+
+    .sec4 {
+        height: auto;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+
+    .fastfood {
+        padding-left: 0;
+        margin-top: 30px;
+        width: 250px;
+        height: auto;
+    }
+
+    .sec4-h1 {
+        margin-top: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .sec4-h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .btn-sec4 {
+        display: block;
+        margin: 20px auto 0;
+        width: 170px;
+    }
+
+    .sec4-div {
+        margin-top: 20px;
+        padding-left: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    /* ================= SECTION 5 - REVIEWS ================= */
+
+    .section5 {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .p-section {
+        font-size: 28px;
+        padding-left: 0;
+        padding-top: 35px;
+        text-align: center;
+    }
+
+    .h-section {
+        font-size: 17px;
+        padding-left: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .div-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .div-s {
+        width: 280px;
+        height: 190px;
+    }
+
+    .stars {
+        margin-top: 35px;
+        padding-left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .p-div1,
+    .p-div2,
+    .p-div3 {
+        padding-left: 0;
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .h-div1,
+    .h-div2,
+    .h-div3 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .div-footer {
+        gap: 30px;
+    }
+
+}
